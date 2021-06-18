@@ -3,17 +3,17 @@ import java.util.ArrayList;
 public class Folder {
 
     private String name;
-    private ArrayList<File> files;
+    private ArrayList<StorageItem> items;
 
     public Folder (String name){
         this.name = name;
-        this.files = null;
+        this.items = null;
     }
 
     public int getSize(){
         int size = 0;
-        for (int i = 0; i< files.size(); i++){
-            size += files.get(i).getSize();
+        for (int i = 0; i< items.size(); i++){
+            size += items.get(i).getSize();
         }
         return size;
     }
