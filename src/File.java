@@ -13,8 +13,10 @@ public class File {
     public String getName(){ return name + "." + type; }
     public int getSize(){ return content.length(); }
 
-    public void printContent(){
-        System.out.println( getName() + "Size: " + getSize() + "Mb " + "Created: " + "date" );
-    }
+    public void printContent(){ System.out.println( getName() + "Size: " + getSize() + "Mb " + "Created: " + "date" ); }
+
+    public void addContent (String contentToAdd){ content += contentToAdd; }
+
+
 
 }
