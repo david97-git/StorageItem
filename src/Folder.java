@@ -19,6 +19,12 @@ public class Folder {
     }
 
     boolean addItem (StorageItem item){
+        for (int i=0 ; i< items.size(); i++){
+            if (items.get(i).getName() == item.getName())
+                return false;
+        items.add(item);
+        return true;
+        }
 
     }
 }
